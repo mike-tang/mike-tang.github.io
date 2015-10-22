@@ -1,0 +1,439 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"20px",
+				"20px"
+			],
+			[
+				"a",
+				"all"
+			],
+			[
+				"get",
+				"getElementById"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 6630,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "search.html",
+			"settings":
+			{
+				"buffer_size": 6890,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 3333,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 812,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/plugins.js",
+			"settings":
+			{
+				"buffer_size": 9427,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/Chrome.sublime-build",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mtang1/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/mtang1/Dropbox/Projects/JobQuest/Prototype/JobQuest-bootstrap/css/main.css",
+		"/Users/mtang1/Dropbox/Projects/JobQuest/Prototype/JobQuest-V1/css/main.css",
+		"/Users/mtang1/Dropbox/Projects/JobQuest/Prototype/JobQuest-V1/index.html",
+		"/Users/mtang1/Dropbox/Projects/JobQuest/Prototype/JobQuest-V1/js/main.js",
+		"/Users/mtang1/Dropbox/Projects/JobQuest/Prototype/index.html",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#1/index.php",
+		"/Users/mtang1/Desktop/Roadshow-eblast.html",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#21/index.php",
+		"/Users/mtang1/Desktop/Roadshow_eblast-v2.html",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#20/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#19/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#16/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#14/index.php",
+		"/Users/mtang1/Desktop/qb-df-sfdc-eblast.html",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#12/index.php",
+		"/Users/mtang1/Desktop/qb-df-sfdc-eblast (1).html",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#10/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#9/form.prod.inc",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#7/index.php",
+		"/Users/mtang1/Desktop/SFDC-email-template_03.html",
+		"/Users/mtang1/Desktop/Df_Management-Plus_email_02.html",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#6/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#0/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#1/features.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#6/header.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#188/index.php",
+		"/Users/mtang1/Desktop/community-newsletter-one-column.html",
+		"/Users/mtang1/Desktop/community-newsletter-one-col.html",
+		"/Users/mtang1/Desktop/tradeshow-follow-up-email.html",
+		"/Users/mtang1/Sites/df-public/nvision/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#179/med_collage.png",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#178/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#52/form.prod.inc",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#49/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#48/form.prod.inc",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#41/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#40/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#39/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#37/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#36/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#35/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#32/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#31/index.php",
+		"/Users/mtang1/Desktop/AOA_eblast.html",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#30/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#5/home.php",
+		"/Users/mtang1/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/mtang1/Desktop/NVISION_last_chance_kindle_survey_email_2nd-email.html",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#1/header.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#25/demo.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#34/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#24/home.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#5/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#10/nav.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#8/header.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#3/ipd",
+		"/Users/mtang1/Desktop/healthme/questions.html",
+		"/Users/mtang1/Desktop/capitalmap/app/views/static/index.html.erb",
+		"/Users/mtang1/Desktop/health.me/js/main.js",
+		"/Users/mtang1/Desktop/health.me/answer.html",
+		"/Users/mtang1/Desktop/health.me/css/bootstrap.css",
+		"/Users/mtang1/Desktop/health.me/css/main.css",
+		"/Users/mtang1/Desktop/health.me/index.html",
+		"/Users/mtang1/Desktop/health.me/questions.html",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#70/index.php",
+		"/Users/mtang1/Desktop/June-EBlast.html",
+		"/Users/mtang1/Desktop/june.html",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#58/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#54/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#48/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#44/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#42/index.php",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#12/genform.htm",
+		"/Users/mtang1/Desktop/EYOD-email-template-appointment.html",
+		"/Users/mtang1/Desktop/Tradeshows_Tradeshow_Follow_up_Email.html",
+		"/Users/mtang1/Desktop/air-optix-nd.html",
+		"/Users/mtang1/Library/Caches/com.binarynights.ForkLift2/#2/index.php",
+		"/Users/mtang1/Desktop/May-UV-Awareness.html",
+		"/Users/mtang1/Desktop/May-UV-Awareness2.html",
+		"/Users/mtang1/Desktop/NVISION_kindle_survey_email_01.html",
+		"/Users/mtang1/Desktop/EMRlogic_partnership_eblast_02.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"images/",
+			"-v",
+			"images/",
+			"img",
+			"images/",
+			"img",
+			"images/",
+			"about",
+			"landing",
+			"img",
+			"images/",
+			"img",
+			"images/",
+			"qbemail",
+			"padding",
+			"20px",
+			"danger",
+			"orange",
+			"img",
+			"images/",
+			"0",
+			"img",
+			"images/",
+			"img",
+			"images/",
+			"img",
+			"images/",
+			"img",
+			"images/",
+			"images"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 6630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1409,
+								1409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 276.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "search.html",
+					"settings":
+					{
+						"buffer_size": 6890,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3673,
+								3673
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 521.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/main.css",
+					"settings":
+					{
+						"buffer_size": 3333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3003,
+								3003
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2454.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/main.js",
+					"settings":
+					{
+						"buffer_size": 812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								812,
+								812
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/plugins.js",
+					"settings":
+					{
+						"buffer_size": 9427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								937,
+								937
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 177.0,
+	"status_bar_visible": true
+}

@@ -1,0 +1,2 @@
+AddType text/cache-manifest .manifest
+AddType video/mp4 .mp4

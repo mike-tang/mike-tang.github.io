@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mike Tang</title>
+        <meta name="description" content="Mike Tang">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+		<link rel="stylesheet" href="css/lightbox.css" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans:400,300,700|Josefin+Sans:700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/three.min.js"></script>
+		<script src="js/tween.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+		<div id="curtain">
+			<div id="splash" class="container-fluid">
+				<div id="brand" class="row-fluid">
+					<div class="span6">
+						<div id="logo-container">
+							<div id="logo"></div>
+						</div>
+					</div>
+					<div class="span6">
+						<h1 id="name">MIKE TANG</h1>
+						<h2 id="title">INTERACTION DESIGNER</h2>
+					</div>
+				</div>
+				<!--
+				<div id="tagline" class="row-fluid">
+					<div class="span12">
+						<h4>designer + developer</h4>
+					</div>
+				</div>
+				-->
+				
+			</div>
+			<nav id="navbar">
+				<div id="nav-logo">
+					<a href="#">
+						<img src="img/logo-nav.png" ondragstart="return false" onmousedown="return false" alt="Logo"/>
+					</a>
+				</div>
+				<ul id="nav-list" class="nav">
+					<li id="nav-projects" class="block-nav">
+						<a href="#projects">Projects</a>
+					</li>
+					<li id="nav-about" class="block-nav">
+						<a href="#about">About</a>
+					</li>
+				</ul>
+			</nav>
+			<!--
+			<div id="nav-indicator">
+				<div class="nav-bg-left"></div>
+				<div class="nav-indicator-arrow"></div>
+				<div class="nav-bg-right"></div>
+			</div>
+			-->
+		</div>
+		
+		<div id="viewport">
+			<div id="main">
+				<section id="projects" class="block invisible" data-block="#projects">
+					<div class="accordion" id="portfolio">
+						<div class="accordion-group">
+							<div class="accordion-heading" data-toggle="collapse" data-parent="#portfolio" data-target="#tec">
+								<h3>The Energy Coalition</h3>
+								<h4>Website Redesign + Rebranding</h4>
+							</div>
+							<div id="tec" class="accordion-body collapse in">
+								<div class="accordion-inner">
+									<a data-toggle="collapse" data-target="#tec" href="#" onclick="return false"><i class="closer icon-remove icon-white"></i></a>
+									<div class="flexslider">
+										<ol class="flex-nav">
+											<li><a>Overview</a></li>
+											<li><a>Research</a></li>
+											<li><a>Solutions</a></li>
+											<li><a>Product</a></li>
+											
+										</ol>
+										<ul class="slides">
+											<li>
+												<div class="row-fluid">
+													<div class="span6">
+														<div class="project-image-container">
+															<div class="project-image" id="homescreen"></div>
+														</div>
+													</div>
+													<div class="span4">
+														<p>The Energy Coalition wanted to streamline its website’s content flow and rebrand itself with a fresh design.
+														</p>
+														<h5>My Role</h5>
+														<ul class="bullet-list">
+															<li><span class="bold">User Experience and Interaction Design Lead</span>
+																<br>Design research, wireframes, mockups
+															</li>
+															<li><span class="bold">Visual Design</span>
+																<br>Icon illustration, typography
+															</li>
+															<li><span class="bold">Web Design and Development</span>
+																<br>HTML5, CSS3, jQuery, JavaScript
+															</li>
+															<li><span class="bold">Customized Wordpress Integration</span>
+																<br>PHP development
+															</li>
+														</ul>
+													</div>
+												</div>										
+											</li>
+											<li>
+												<div class="row-fluid">
+													<div class="span3">
+														<h5>Needfinding</h5>
+														<p><span class="bold">Goal</span>
+															<br>To establish the website as the company's primary business development tool
+														</p>
+														<p><span class="bold">Target Audience</span>
+															<br>Public agencies, schools, utility companies, businesses
+														</p>
+														<p><span class="bold">User Survey</span> 
+															<br><a href="https://docs.google.com/spreadsheet/viewform?formkey=dFduYjJfUVpSbk1BOUVBdHVIRzlSZUE6MA#gid=0" title="TEC UX Sample Survey" target="_blank">Here's a sample of what was sent out to various clients and partners.</a></p>
+													</div>
+													<div class="span3">
+														<h5>User Personas</h5>
+														<p>Created to help define our users. Here's a sample profile:</p>
+														<a href="img/tec/tec-persona-sample.png" title="User Persona - TEC Employee" rel="lightbox"><img src="img/tec/tec-persona-sample.png"></a>
+													</div>
+													<div class="span3">
+														<h5>Sitemap + Content Inventory</h5>
+														<p>To help my team understand the fragmentation of the current site's navigation and content:</p>
+														<a href="https://docs.google.com/drawings/pub?id=1jf52ziXtpvOzojq7sc1sTXMgIOHHsa9tMGhncwL-jsQ&amp;w=1238&amp;h=658" title="TEC Site Map, Before" rel="lightbox"><img src="https://docs.google.com/drawings/pub?id=1jf52ziXtpvOzojq7sc1sTXMgIOHHsa9tMGhncwL-jsQ&amp;w=1238&amp;h=658"></a>
+													</div>
+													<div class="span3">
+														<h5>Navigation Card Sort</h5>
+														<p>I set up a card sort exercise in a Google Doc presentation to make it an interactive, real-time workshop activity.</p>
+														<a href="https://docs.google.com/presentation/d/1QqJxU-hjirTSi2F15fAe6oLjDuHh2NCNR-nmzRdKzAY/edit" title="TEC Sample Card Sort Exercise" target="_blank"><img src="img/tec/tec-card-sort.png" /></a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row-fluid">
+													<div class="span4">
+														<h5>Quality > Quantity</h5>
+														<p>I consolidated the website's original 55 pages down to four. Check out the new sitemap below:</p>
+														<a href="https://docs.google.com/drawings/pub?id=1tG4xaqLTxfjgN2H-hdUzvQXJpdCNTC_WE3IX87CMs44&amp;w=933&amp;h=735" title="TEC Site Map, After" rel="lightbox"><img src="https://docs.google.com/drawings/pub?id=1tG4xaqLTxfjgN2H-hdUzvQXJpdCNTC_WE3IX87CMs44&amp;w=933&amp;h=735"></a>
+													</div>
+													<div class="span8">
+														<h5>Wireframes + Mockups</h5>
+														<div class="imageRow">
+															<div class="set">
+																<div class="single first">
+																	<a href="img/tec/tec-home-wireframe1.png" rel="lightbox[tec]" title="Home Page Wireframe Sketch 1" ><img src="img/tec/tec-home-wireframe1-thumb.png" /></a>
+																</div>
+																<div class="single">
+																	<a href="img/tec/tec-home-wireframe2.png" rel="lightbox[tec]" title="Home Page Wireframe Sketch 2" ><img src="img/tec/tec-home-wireframe2-thumb.png" /></a>
+																</div>
+																<div class="single">
+																	<a href="img/tec/tec-home-mockup.png" rel="lightbox[tec]" title="Home Page Mockup" ><img src="img/tec/tec-home-mockup-thumb.png" /></a>
+																</div>
+																<div class="single">
+																	<a href="img/tec/tec-story-wireframe.png" rel="lightbox[tec]" title="Our Story Page Wireframe Sketch" ><img src="img/tec/tec-story-wireframe-thumb.png" /></a>
+																</div>
+																<div class="single">
+																	<a href="img/tec/tec-story-mockup.png" rel="lightbox[tec]" title="Our Story Page Mockup" ><img src="img/tec/tec-story-mockup-thumb.png" /></a>
+																</div>
+																<div class="single">
+																	<a href="img/tec/tec-expertise-wireframe.png" rel="lightbox[tec]" title="Expertise Page Wireframe Sketch" ><img src="img/tec/tec-expertise-wireframe-thumb.png" /></a>
+																</div>
+																<div class="single">
+																	<a href="img/tec/tec-expertise-mockup.png" rel="lightbox[tec]" title="Expertise Page Mockup" ><img src="img/tec/tec-expertise-mockup-thumb.png" /></a>
+																</div>
+																<div class="single">
+																	<a href="img/tec/tec-portfolio-wireframe.png" rel="lightbox[tec]" title="Portfolio Page Wireframe Sketch" ><img src="img/tec/tec-portfolio-wireframe-thumb.png" /></a>
+																</div>
+																<div class="single">
+																	<a href="img/tec/tec-portfolio-mockup.png" rel="lightbox[tec]" title="Portfolio Page Mockup" ><img src="img/tec/tec-portfolio-mockup-thumb.png" /></a>
+																</div>
+																<div class="single">
+																	<a href="img/tec/tec-contact-wireframe.png" rel="lightbox[tec]" title="Contact Page Wireframe Sketch" ><img src="img/tec/tec-contact-wireframe-thumb.png" /></a>
+																</div>
+																<div class="single last">
+																	<a href="img/tec/tec-contact-mockup.png" rel="lightbox[tec]" title="Contact Page Mockup" ><img src="img/tec/tec-contact-mockup-thumb.png" /></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row-fluid">
+													<div class="span6">
+														<h5>Final Product</h5>
+														<p>Currently in development. ETA December 2012.</p>
+													</div>
+													<div class="span6">
+														<h5>Lessons Learned <span>(SO FAR)</span></h5>
+														<ul class="bullet-list">
+															<li>Be flexible with content, but absolutely rigid with design quality and purpose.</li>
+															<li>Evangelizing new ideas and advocating for radical changes takes time and diplomacy. Patience is a must.</li>
+															<li>Don't sweat the small details. Prioritize and think big picture.</li>
+															<li>Never settle for mediocrity.</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading" data-toggle="collapse" data-parent="#portfolio" data-target="#lacounty-map">
+								<h3>Los Angeles County</h3>
+								<h4>Interactive Map Design</h4>
+							</div>
+							<div id="lacounty-map" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<div class="row-fluid">
+										<div class="span4">
+											<h5>THE PROBLEM</h5>
+											<p>LA County needed a way to visualize the impact and distribution of their energy efficiency projects. Project data needed to be consolidated into one central source and accessible across multiple consultant teams.</p>
+											<h5>THE SOLUTION</h5>
+											<p>I conceptualized and created a <span class="bold">real-time, interactive map</span> that sourced its data from Google Docs spreadsheets (collaboration ftw!). I set up a spreadsheet for each map layer, let team members input their data, and then watched all of it auto-populate into the map (hosted in <a href="http://geocommons.com/">Geocommons</a>).</p>
+										</div>
+										<div class="span4">
+											<h5>THE MENTAL MODEL</h5>
+											<a href="https://docs.google.com/drawings/pub?id=1Ao2m2IVNBKpM_daavciFpWCCmUP3oTaDHuxE96N1S-A&amp;w=963&amp;h=775" title="Interactive Map: Data Flow" rel="lightbox"><img src="https://docs.google.com/drawings/pub?id=1Ao2m2IVNBKpM_daavciFpWCCmUP3oTaDHuxE96N1S-A&amp;w=963&amp;h=775"></a>
+										</div>
+										<div class="span4">
+											<h5>SCREENSHOTS</h5>
+											<div class="imageRow">
+												<div class="set">
+													<div class="single first">
+														<a href="img/lac/lac-map1.png" rel="lightbox[lac]" title="LA County Interactive Map"><img src="img/lac/lac-map1-thumb.png" /></a>
+													</div>
+													<div class="single">
+														<a href="img/lac/lac-map2.png" rel="lightbox[lac]" title="LA County Interactive Map [Zoomed In]" ><img src="img/lac/lac-map2-thumb.png" /></a>
+													</div>
+													<div class="single last">
+														<a href="img/lac/lac-map3.png" rel="lightbox[lac]" title="LA County Interactive Map [Marked Up]" ><img src="img/lac/lac-map3-thumb.png" /></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading" data-toggle="collapse" data-parent="#portfolio" data-target="#socalrec">
+								<h3>Southern California Regional Energy Center</h3>
+								<h4>Print + Branding Design</h4>
+							</div>
+							<div id="socalrec" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<a data-toggle="collapse" data-target="#socalrec" href="#" onclick="return false"><i class="closer icon-remove icon-white"></i></a>
+									<div class="row-fluid">
+										<div class="span4">
+											<p>The Southern California Regional Energy Center asked me to develop a style guide that complemented its predefined logo and would work for text-heavy collateral. Here are a few samples of what I produced:</p>
+										</div>
+										<div class="span8">
+											<div class="imageRow">
+												<div class="set">
+													<div class="single first">
+														<a href="img/screc/screc-overview-1.png" rel="lightbox[screc]" title="SCREC Program Overview Flyer [Page 1]" ><img src="img/screc/screc-overview-1-thumb.png" /></a>
+													</div>
+													<div class="single">
+														<a href="img/screc/screc-overview-2.png" rel="lightbox[screc]" title="SCREC Program Overview Flyer [Page 2]" ><img src="img/screc/screc-overview-2-thumb.png" /></a>
+													</div>
+													<div class="single">
+														<a href="img/screc/screc-comparison-chart.png" rel="lightbox[screc]" title="SCREC Financing Comparison Chart"><img src="img/screc/screc-comparison-chart-thumb.png" /></a>
+													</div>
+													<div class="single">
+														<a href="img/screc/screc-decision-tree.png" rel="lightbox[screc]" title="SCREC Financing Decision Tree" ><img src="img/screc/screc-decision-tree-thumb.png" /></a>
+													</div>
+													<div class="single">
+														<a href="img/screc/screc-master-lease.png" rel="lightbox[screc]" title="SCREC Public Agency Master Lease Flyer"><img src="img/screc/screc-master-lease-thumb.png" /></a>
+													</div>
+													<div class="single">
+														<a href="img/screc/screc-pool-pumps-1.png" rel="lightbox[screc]" title="SCREC Pool Pump Initiative [Page 1]" ><img src="img/screc/screc-pool-pumps-1-thumb.png" /></a>
+													</div>
+													<div class="single">
+														<a href="img/screc/screc-pool-pumps-2.png" rel="lightbox[screc]" title="SCREC Pool Pump Initiative [Page 2]" ><img src="img/screc/screc-pool-pumps-2-thumb.png" /></a>
+													</div>
+													<div class="single">
+														<a href="img/screc/screc-street-lighting-1.png" rel="lightbox[screc]" title="SCREC Street Lighting Initiative [Page 1]" ><img src="img/screc/screc-street-lighting-1-thumb.png" /></a>
+													</div>
+													<div class="single last">
+														<a href="img/screc/screc-street-lighting-2.png" rel="lightbox[screc]" title="SCREC Street Lighting Initiative [Page 2]" ><img src="img/screc/screc-street-lighting-2-thumb.png" /></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="about" class="block invisible" data-block="#about">
+					<div id="about-inner" class="container-fluid">
+						<div class="row-fluid">
+							<div class="span6">
+								<h3>Not your average designer</h3>
+								<p>With a background in urban design and sustainability, I'm all about crafting simple and elegant experiences that enable others to be more productive. Whether digital, physical, or purely conceptual, I strive simply to design things that are beautiful, efficient, intuitive, and have positive and scalable impact on people's lives.</p>
+								<h3>Determined to beat the odds</h3>
+								<p>To be honest, I have no design qualifications. My skills are all self-taught, and my design eye is trained through endless curiosity and self-exposure to new ideas. I get things done by asking lots of questions, evaluating feedback, and being resourceful. Passion and grit takes care of the rest.</p>
+							</div>
+							<div class="span6">
+								<h3>Available for hire!</h3>
+								<p>Looking for an enthusiastic, highly-motivated problem solver to join your design team? <a href="https://db.tt/P4v1mkEp" target="_blank">Download my resume.</a> Drop me a line and I'll get back to you within 12 hours.</p>
+								<h6>Ask me anything!</h6>
+								<ul id="connect-wrap">
+									<li class="connect-link">
+										<a class="connect-icon" id="email" href="mailto:yo@miketang.co" target="_blank"></a>
+									</li>
+									<li class="connect-link">
+										<a class="connect-icon" id="twitter" href="http://twitter.com/miketang" target="_blank"></a>
+									</li>
+									<li class="connect-link">
+										<a class="connect-icon" id="linkedin" href="http://linkedin.com/in/mctang" target="_blank"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+        <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.0.min.js"><\/script>')</script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		<!--
+        <script>
+            var _gaq=[['_setAccount','UA-35238626-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+		-->
+    </body>
+</html>

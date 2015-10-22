@@ -1,0 +1,35 @@
+#navbar {
+	border-bottom: 1px solid #DCDCDC;
+}
+
+#title > .container {
+	border-bottom: 1px solid #DCDCDC;
+}
+
+#main .media .fluid-width-video-wrapper {
+	border: 1px solid #DCDCDC;
+}
+
+.input-field {
+	appearance: none;
+	line-height: 25px;
+	box-shadow: none;
+	border: 1px solid #DCDCDC;
+}
+
+
+.input-dropdown-group {
+	overflow: hidden;
+	border: 1px solid #DCDCDC;
+}
+
+.input-dropdown {
+	line-height: 25px;
+	width: 120%;
+	height: 23px;
+	padding: 0 6px;
+}
+
+#footer {
+	border-top: 1px solid #DCDCDC;
+}

@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Mike Tang <@miketang>
+	UI, Web Design and Development
+
+# THANKS!!
+
+	Twitter Bootstrap <@twbootstrap>
+	HTML5 Boilerplate <@h5bp>
+	Initializr <@verekia>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr

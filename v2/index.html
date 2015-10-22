@@ -1,0 +1,634 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mike Tang | design + code</title>
+        <meta name="description" content="Mike Tang">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic|Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.3.min.js"><\/script>')</script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script>
+			$(document).ready(function() {
+				// LOAD PROGRESS BAR
+				var progressbar = $('#progress-bar'),
+					max = progressbar.attr('max'),
+					time = (1000/max)*10,	
+			        value = progressbar.val();
+
+			    var loading = function() {
+			        value += 1;
+			        addValue = progressbar.val(value);
+			        
+			        $('.progress-value').html(value + '%');
+
+			        if (value == max) {
+			            clearInterval(animate);		
+			            $(".progress-wrap").delay(500).fadeOut(500,"linear");   
+			            $("#curtain").delay(1000).slideUp(500, "linear");
+			        }
+			    };
+			    
+			    var animate = setInterval(function() {
+			        loading();
+			    }, time);
+			});
+		</script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="curtain">
+			<div id="curtain-inner">
+				<div class="progress-wrap">
+					<div class="progress-bar-wrapper">
+						<progress id="progress-bar" value="0" max="100"></progress>
+						<p class="progress-value">0%</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav id="navbar">
+			<div id="nav-brand">
+				<a href="#">
+					<div id="nav-logo">
+						<img src="img/logo.png" alt="Mike Tang" />
+					</div>
+					<div id="nav-name">
+						<p id="name">MIKE TANG</p>
+						<p id="title">design + code</p>
+					</div>
+				</a>
+			</div>
+			<div id="nav-toggle">
+				<a href="#">
+					<span class="icon-menu"></span>
+				</a>
+			</div>
+			<ul id="nav-items">
+				<li id="nav-portfolio" class="nav-block">
+					<a href="#portfolio">Portfolio</a>
+				</li>
+				<li id="nav-about" class="nav-block">
+					<a href="#about">About</a>
+				</li>
+				<li id="nav-contact" class="nav-block">
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="primary viewport">
+			<div class="main">
+				<section id="portfolio" class="block invisible" data-block="#portfolio">
+					<div id="tiles" class="container">
+						<ul id="tile-collection">
+							<li class="tile">
+								<a href="#intuit-df" class="tile-trigger">
+									<div class="tile-background" style="background-image: url('img/bg-intuit-df.jpg');"></div>
+									<div class="tile-inner-padding">
+										<p class="tile-title">
+											Intuit Demandforce
+										</p>
+										<p class="tile-subtitle">
+											Corporate website
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="tile">
+								<a href="#df-learn" class="tile-trigger">
+									<div class="tile-background" style="background-image: url('img/bg-df-learn.jpg');"></div>
+									<div class="tile-inner-padding">
+										<p class="tile-title">
+											Demandforce Learn
+										</p>
+										<p class="tile-subtitle">
+											Offline-enabled webpage for tablets
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="tile">
+								<a href="#responsive-emails" class="tile-trigger">
+									<div class="tile-background" style="background-image: url('img/bg-responsive-email.jpg');"></div>
+									<div class="tile-inner-padding">
+										<p class="tile-title">
+											Fluid Responsive Emails
+										</p>
+										<p class="tile-subtitle">
+											Emails that work on any device
+										</p>
+									</div>
+								</a>
+							</li>
+							<!--
+							<li class="tile">
+								<a href="#collegiate-love" class="tile-trigger">
+									<div class="tile-background" style="background-image: url('img/bg-collegiate-love.jpg');"></div>
+									<div class="tile-inner-padding">
+										<p class="tile-title">
+											Collegiate Love
+										</p>
+										<p class="tile-subtitle">
+											A story of two newlyweds
+										</p>
+									</div>
+								</a>
+							</li>
+							-->
+							<li class="tile">
+								<a href="#anniesaid" class="tile-trigger">
+									<div class="tile-background" style="background-image: url('img/bg-anniesaid.jpg');"></div>
+									<div class="tile-inner-padding">
+										<p class="tile-title">
+											Anniesaid
+										</p>
+										<p class="tile-subtitle">
+											Personal blog redesign concept
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="tile">
+								<a href="#jobquest" class="tile-trigger">
+									<div class="tile-background" style="background-image: url('img/bg-jobquest.jpg');"></div>
+									<div class="tile-inner-padding">
+										<p class="tile-title">
+											JobQuest
+										</p>
+										<p class="tile-subtitle">
+											Concept and logo design
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="tile">
+								<a href="#tec" class="tile-trigger">
+									<div class="tile-background" style="background-image: url('img/bg-tec.jpg');"></div>
+									<div class="tile-inner-padding">
+										<p class="tile-title">
+											The Energy Coalition
+										</p>
+										<p class="tile-subtitle">
+											Website redesign concept
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div id="projects" class="container">
+						<section id="intuit-df" class="panel" data-project="#intuit-df">
+							<div class="hero" style="background-image: url('img/bg-intuit-df.jpg');">
+							</div>
+							<div class="content">
+								<div class="content-inner">
+									<a class="panel-close" href="#">&laquo; Back to portfolio</a>
+									<h1>Intuit Demandforce</h1>
+									<h2>HTML5, PHP, CSS3, JS, jQuery, Interaction Design, Responsive Design, Information Architecture, A/B &amp; Multivariate Testing, Google Analytics</h2>
+									<p><a href="http://www.demandforce.com/" target="_blank">www.demandforce.com</a></p>
+									<p>Front end developer of Intuit Demandforce’s main corporate website specializing in responsive design and development.</p>
+									<p>Intuit Demandforce is a marketing and communications automation tool with several features that make it easy for small businesses to retain and connect with new customers. Our team is currently in the process of rebranding and revamping our website’s design and content. In addition to regular maintenance and updates, my role is to explore and implement ways to improve site performance, usability, and information architecture.</p>
+									<p>To help get the conversation started on improving information architecture, I created a site map of our current website.</p>
+									<img src="img/intuit-df/df-site-map.png" alt="Intuit Demandforce Site Map" />
+									<p>I’m currently working on a prototype for our new responsive website. More details to come soon!</p>
+								</div>
+							</div>
+						</section>
+						<section id="df-learn" class="panel" data-project="#df-learn">
+							<div class="hero" style="background-image: url('img/bg-df-learn.jpg');">
+							</div>
+							<div class="content">
+								<div class="content-inner">
+									<a class="panel-close" href="#">&laquo; Back to portfolio</a>
+									<h1>Demandforce Learn</h1>
+									<h2>HTML5, CSS3, JS, jQuery, Interaction Design, Responsive Design</h2>
+									<p><a href="http://www.demandforce.com/learn/" target="_blank">www.demandforce.com/learn</a></p>
+									<p>Lead designer and developer for Demandforce Learn, an offline-enabled webpage optimized for tablet usage.</p>
+									<p>The main purpose of this page was to serve as a quick product overview for sales representatives and partners to use while traveling and speaking with potential customers. Since internet connectivity isn't always guaranteed at tradeshows or at various small business locations, DF reps needed an offline alternative to our website.</p>
+									<p>To solve this problem, I designed and built a lightweight <span class="bold">HTML5</span> webpage with smooth <span class="bold">CSS3</span> transitions.</p>
+									<img src="img/df-learn/df-wireframe-01.jpg" alt="Demandforce Learn wireframe, interaction design" />
+									<img src="img/df-learn/df-wireframe-02.jpg" alt="Demandforce Learn wireframe, interaction design" />
+									<img src="img/df-learn/df-wireframe-03.jpg" alt="Demandforce Learn wireframe, interaction design" />
+									<img src="img/df-learn/df-wireframe-04.jpg" alt="Demandforce Learn wireframe, interaction design" />
+									<p>The wireframes were relatively simple, so I skipped drafting mockups and went straight into developing and iterating on a prototype that would eventually launch as the live page.</p>
+									<p>Without a doubt, this webpage needed to be <span class="bold">fluid responsive</span> so that it could cater to all types of mobile devices. I built a custom grid that responded to landscape and portrait views on tablets and phones, and used <a href="http://fitvidsjs.com/">FitVids.js</a> to make sure videos resized properly as well. To further improve performance and flexibility, I built an icon font with <a href="http://www.icomoon.io">IcoMoon</a>. Finally, I enabled <span class="bold">offline access</span> by listing all assets in the <span class="bold">cache manifest</span>, which tells the browser what to store in the application cache. The total size of the page (minus the video, which can’t be cached) came out to <span class="bold">643kb</span> - just enough for a busy Demandforce representative to download within a few seconds in the office and head out to her next event.</p>
+									<img class="width-full" src="img/df-learn/df-learn-screen-01.png" alt="Demandforce Learn, tablet view" />
+									<img class="width-full" src="img/df-learn/df-learn-screen-02.png" alt="Demandforce Learn, tablet view" />
+									<img class="width-three" src="img/df-learn/df-learn-screen-03.png" alt="Demandforce Learn, mobile view" />
+									<img class="width-three" src="img/df-learn/df-learn-screen-04.png" alt="Demandforce Learn, mobile view" />
+								</div>
+							</div>
+						</section>
+						<section id="responsive-emails" class="panel" data-project="#responsive-emails">
+							<div class="hero" style="background-image: url('img/bg-responsive-email.jpg');">
+							</div>
+							<div class="content">
+								<div class="content-inner">
+									<a class="panel-close" href="#">&laquo; Back to portfolio</a>
+									<h1>Fluid Responsive Email Templates</h1>
+									<h2>HTML, CSS, Responsive Design, universal compatibility</h2>
+									<p><a href="downloads/responsive-email-template.html" target="_blank">Download</a></p>
+									<p>Lead developer for all Demandforce marketing email communications. I created fluid responsive email templates to improve the user experience of our communications across all devices, browsers, email clients, and mobile apps.</p>
+									<p>Coding emails that work everywhere can be tricky. Devices come in various sizes, browsers understand code differently, and email clients and apps provide varying degrees of support for HTML elements and CSS styling. There was a time when media queries would suffice to get responsive emails working on native Android and iOS mail apps, but their <a href="http://stylecampaign.com/blog/2012/10/responsive-email-support/">support across different email clients and apps is limited.</a> Fortunately, there is a solution for this - <span class="bold">fluid responsive grids.</span></p>
+									<p>Fluid grids work in emails by creating nested table layouts with percentage widths rather than pixels. This method allows all text, images, and buttons to adjust according to device size.</p>
+									<p>A maximum width is set on the parent table to restrict content from expanding too wide on the desktop view. Microsoft Outlook 2007/2010/2013 versions don't support max-width, but <span class="bold">conditional comments</span> for Outlook can be used to circumvent this issue.</p>
+									<p><span class="bold">Preview:</span></p>
+									<p>Full-width view</p>
+									<img class="width-full" src="img/responsive-email/responsive-email-01.jpg" alt="Fluid Responsive Email Template, full-width view" />
+									<p>Mobile view</p>
+									<img class="width-full" src="img/responsive-email/responsive-email-02.jpg" alt="Fluid Responsive Email Template, mobile view" />
+								</div>
+							</div>
+						</section>
+						<!--
+						<section id="collegiate-love" class="panel" data-project="#collegiate-love">
+							<div class="hero" style="background-image: url('img/bg-collegiate-love.jpg');">
+							</div>
+							<div class="content">
+								<div class="content-inner">
+									<a class="panel-close" href="#">&laquo; Back to portfolio</a>
+									<h1>Collegiate Love</h1>
+									<h2>Adobe Premiere Pro CS6, video production/editing, storytelling</h2>
+									<p>Producer for fun and amateur videographer. I was asked to create a video slideshow that would tell the story of the bride and groom, Jessica and Jonathan. What better way to surprise a wedding party than to present the newlyweds in a spin off of a video that everyone <a href="http://www.youtube.com/watch?v=nnsSUqgkDwU" target="_blank">already knows?</a></p>
+									<div class="video">
+										<iframe src="http://player.vimeo.com/video/67108590" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</section>
+						-->
+						<section id="anniesaid" class="panel" data-project="#anniesaid">
+							<div class="hero" style="background-image: url('img/bg-anniesaid.jpg');">
+							</div>
+							<div class="content">
+								<div class="content-inner">
+									<a class="panel-close" href="#">&laquo; Back to portfolio</a>
+									<h1>Anniesaid Personal Blog</h1>
+									<h2>HTML5, PHP, CSS3, JS, jQuery, AJAX, UX, Logo Design, Interaction Design, Responsive Design, WordPress</h2>
+									<p><a href="demo/blog/index.html" target="_blank">Prototype Demo</a></p>
+									<p>Sole designer and developer for a personal blog redesign project. I was asked to come up with a design and logo concept for a personal blog.</p>
+									<p>More details coming soon!</p>
+									<img class="width-full" src="img/anniesaid/blog-wireframe-01.jpg" alt="Blog Design, Wireframe" />
+									<img class="width-full" src="img/anniesaid/blog-wireframe-02.jpg" alt="Blog Design, Wireframe" />
+									<img class="width-full" src="img/anniesaid/blog-wireframe-03.jpg" alt="Blog Design, Wireframe" />
+									<img class="width-full" src="img/anniesaid/blog-wireframe-04.jpg" alt="Blog Design, Wireframe" />
+									<p><span class="bold">Logo mockups</span></p>
+									<img class="width-three" src="img/anniesaid/blog-logo-01.png" alt="Blog Design, Logo" />
+									<img class="width-three" src="img/anniesaid/blog-logo-02.png" alt="Blog Design, Logo" />
+									<img class="width-three" src="img/anniesaid/blog-logo-03.png" alt="Blog Design, Logo" />
+								</div>
+							</div>
+						</section>
+						<section id="jobquest" class="panel" data-project="#jobquest">
+							<div class="hero" style="background-image: url('img/bg-jobquest.jpg');">
+							</div>
+							<div class="content">
+								<div class="content-inner">
+									<a class="panel-close" href="#">&laquo; Back to portfolio</a>
+									<h1>JobQuest</h1>
+									<h2>HTML5, CSS3, jQuery, UX, Interaction Design, Responsive Design, Visual Design, Logo Design, Twitter Bootstrap</h2>
+									<p><a href="demo/jobquest/index.html" target="_blank">Demo: Home Page Prototype</a></p>
+									<p>Lead designer for JobQuest product concept.</p>
+									<p>JobQuest was a product idea that aimed to make it easier for people to seek career advice from seasoned professionals. I was approached by the founders to come up with a product and logo design concept that would brand the company with a professional yet welcoming feel.</p>
+									<p>Due to the quick turnaround time requested, I skipped the wireframe sketches and dove straight into developing the prototype with the help of <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.</p>
+									<img class="width-full" src="img/jobquest/jobquest-sketch-01.jpg" alt="JobQuest, Logo" />
+									<img class="width-full" src="img/jobquest/jobquest-sketch-02.jpg" alt="JobQuest, Logo" />
+									<img class="width-full" src="img/jobquest/jobquest-sketch-03.jpg" alt="JobQuest, Logo" />
+									<img class="width-three" src="img/jobquest/jobquest-logo-01.png" alt="JobQuest, Logo" />
+									<img class="width-three" src="img/jobquest/jobquest-logo-02.png" alt="JobQuest, Logo" />
+									<img class="width-three" src="img/jobquest/jobquest-logo-03.png" alt="JobQuest, Logo" />
+									<img class="width-three" src="img/jobquest/jobquest-logo-04.png" alt="JobQuest, Logo" />
+									<img class="width-three" src="img/jobquest/jobquest-logo-05.png" alt="JobQuest, Logo" />
+									<img class="width-three" src="img/jobquest/jobquest-logo-06.png" alt="JobQuest, Logo" />
+									<img class="width-half" src="img/jobquest/jobquest-logo-07.png" alt="JobQuest, Logo" />
+									<img class="width-half" src="img/jobquest/jobquest-logo-08.png" alt="JobQuest, Logo" />
+								</div>
+							</div>
+						</section>
+						<section id="tec" class="panel" data-project="#tec">
+							<div class="hero" style="background-image: url('img/bg-tec.jpg');">
+							</div>
+							<div class="content">
+								<div class="content-inner">
+									<a class="panel-close" href="#">&laquo; Back to portfolio</a>
+									<h1>The Energy Coalition</h1>
+									<h2>HTML5, PHP, CSS3, JS, jQuery, UX, Interaction Design, Responsive Design, Visual Design, WordPress</h2>
+									<p>Sole designer and developer for The Energy Coalition's website redesign project.</p>
+									<p>The Energy Coalition is a non-profit consultancy that helps local governments engage their communities with programs that promote sustainability. I was asked to come up with a design concept and develop a prototype that would deliver content more efficiently to potential clients and rebrand the company with a fresh look.</p>
+									<p>One of the first necessary steps was to analyze the current site's navigation and content structure. I created a <span class="bold">site map</span> to help the team understand the fragmentation of their current site. In the streamlined version of the <span class="bold">information architecture</span>, I proposed reducing the 55 current pages down to five.</p>
+									<img class="width-full" src="img/tec/tec-sitemap-current.png" alt="The Energy Coalition, Current Site Map" />
+									<img class="width-full" src="img/tec/tec-sitemap-proposed.png" alt="The Energy Coalition, Proposed Site Map" />
+									<p><span class="bold">Wireframes</span></p>
+									<img class="width-full" src="img/tec/tec-wireframe-01.jpg" alt="The Energy Coalition, Wireframes" />
+									<img class="width-full" src="img/tec/tec-wireframe-02.jpg" alt="The Energy Coalition, Wireframes" />
+									<img class="width-full" src="img/tec/tec-wireframe-03.jpg" alt="The Energy Coalition, Wireframes" />
+									<img class="width-full" src="img/tec/tec-wireframe-04.jpg" alt="The Energy Coalition, Wireframes" />
+									<img class="width-full" src="img/tec/tec-wireframe-05.jpg" alt="The Energy Coalition, Wireframes" />
+									<img class="width-full" src="img/tec/tec-wireframe-06.jpg" alt="The Energy Coalition, Wireframes" />
+									<img class="width-full" src="img/tec/tec-wireframe-07.jpg" alt="The Energy Coalition, Wireframes" />
+									<p><span class="bold">Mockups</span></p>
+									<img class="width-full" src="img/tec/tec-mockup-01.jpg" alt="The Energy Coalition, Mockups" />
+									<img class="width-full" src="img/tec/tec-mockup-02.jpg" alt="The Energy Coalition, Mockups" />
+									<img class="width-full" src="img/tec/tec-mockup-03.jpg" alt="The Energy Coalition, Mockups" />
+									<img class="width-full" src="img/tec/tec-mockup-04.jpg" alt="The Energy Coalition, Mockups" />
+									<img class="width-full" src="img/tec/tec-mockup-05.jpg" alt="The Energy Coalition, Mockups" />
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+				<section id="about" class="block invisible" data-block="#about">
+					<div id="" class="panel active">
+						<div class="hero" style="background-image: url('img/bg-about.jpg');">
+						</div>
+						<div class="content">
+							<div class="content-inner">
+								<h1>Mike Tang</h1>
+								<h2>Not a fan of job titles</h2>
+								<p>Self-taught front-end developer and interaction designer who loves to build impactful experiences for web and mobile. Currently @ <a href="http://www.demandforce.com/" target="_blank">Intuit Demandforce</a>.</p>
+								<h3>The Journey</h3>
+								<p>Post undergrad, I was on track to pursue a career in sustainable urban design. But just as I was about to submit grad school apps, I was hit with a huge epiphany - if I was going to make any meaningful change in this world, it wouldn't be through local-scale projects. It'd have to be through design and technology that could be easily scaled and distributed globally.</p>
+								<p>At this point, I went all in with the career pivot. My goal was to end up in a role where I'd be at the intersection of design, code, and an idea that could indiscriminately improve human quality of life. To get started, I learned the basics of web technology on <a href="http://www.codecademy.com" target="_blank">Codecademy</a> and <a href="http://www.teamtreehouse.com">Treehouse</a>. I was also lucky enough to stumble upon <a href="http://www.coursera.org/course/hci">Coursera's Human Computer Interaction</a> course and gain a healthy boost of knowledge in user experience design principles. Passion and grit took care of the rest.</p>
+								<h3>Where I'm at now</h3>
+								<p>I'm still galaxies away from where I want to be, but this is what I've learned so far.</p>
+								<div class="skills-section-wrap">
+									<h4>Front End Development</h4>
+									<ul class="skills-section">
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-html5"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>HTML5</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-css3"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>CSS3</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-js"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>JavaScript</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-jquery"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>jQuery</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-responsive"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Responsive</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="skills-section-wrap">
+									<h4>Back End Development</h4>
+									<ul class="skills-section">
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-php"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>PHP</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-wordpress"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Wordpress</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="skills-section-wrap">
+									<h4>Design</h4>
+									<ul class="skills-section">
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-photoshop"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Photoshop</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-illustrator"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Illustrator</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-indesign"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>InDesign</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-ux"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>UX Design</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-ixd"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Interaction Design</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-visual"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Visual Design</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-ia"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Information Architecture</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-abtesting"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>A/B/MV Testing</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="skills-section-wrap">
+									<h4>Other Tools</h4>
+									<ul class="skills-section">
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-analytics"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Google Analytics</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="skills-section-wrap">
+									<h4>Learning List</h4>
+									<ul class="skills-section">
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-node"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Node.js</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-backbone"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Backbone.js</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-rails"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Ruby on Rails</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-python"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>Python</p>
+											</div>
+										</li>
+										<li class="skills-box">
+											<div class="skills-icon">
+												<div class="skills-icon-inner">
+													<span class="icon-coffeescript"></span>
+												</div>
+											</div>
+											<div class="skills-text">
+												<p>CoffeeScript</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="contact" class="block invisible" data-block="#contact">
+					<div id="" class="panel active">
+						<div class="hero" style="background-image: url('img/bg-contact.jpg');">
+						</div>
+						<div class="content">
+							<div class="content-inner">
+								<h1>Let's collaborate!</h1>
+								<h2>Or just say hi</h2>
+								<p>Find me on <a href="https://www.linkedin.com/in/mctang" target="_blank">LinkedIn</a>, <a href="https://plus.google.com/+MikeTang" target="_blank">Google+</a>, or <a href="https://twitter.com/miketang" target="_blank">Twitter</a>.</p>
+								<p>Feel free to <a href="mailto:yo@miketang.co" target="_blank">email me</a> about anything!</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+        
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-35238626-1');ga('send','pageview');
+        </script>
+    </body>
+</html>

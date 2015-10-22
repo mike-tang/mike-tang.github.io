@@ -1,0 +1,12 @@
+# Pretty Permalinks
+RewriteRule ^(images)($|/) - [L]
+RewriteCond %{REQUEST_URI} !^action=logout [NC]
+RewriteCond %{REQUEST_URI} !^action=login [NC]
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks -MultiViews
+Options +SymLinksIfOwnerMatch -MultiViews
+RewriteEngine on
+RewriteBase /blog/
+RewriteCond %{REQUEST_URI} !index\.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?filename=$1 [NC,QSA,L]

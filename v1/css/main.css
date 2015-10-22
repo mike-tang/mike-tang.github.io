@@ -1,0 +1,899 @@
+/* ==========================================================================
+ * Primary CSS Styles
+ * Author: Mike Tang
+ * ========================================================================== */
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #222222;
+}
+
+
+h1, h2 {
+	font-family: 'Josefin Sans', Helvetica, Arial, Sans Serif;
+}
+
+h3, h4, h5, h6 {
+	font-family: 'Oswald', Helvetica, Arial, Sans Serif;
+	color: #FFF;
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 5.143em;
+	line-height: 1em;
+	color: #FFF;
+}
+
+h2 {
+	font-size: 2.429em;
+	font-weight: 400;
+	color: #8A7C7F;
+}
+
+h3 {
+	font-size: 2.571em;
+	font-weight: 400;
+	padding: 10px 0;
+}
+
+h4 {
+	font-size: 1.857em;
+	font-weight: 300;
+	color: #8A7C7F;
+	margin-bottom: 20px;
+}
+
+h5 {
+	font-size: 1.714em;
+	font-weight: 400;
+}
+
+h5 span {
+	font-weight: 300;
+	color: #8A7C7F;
+}
+
+h6 {
+	font-size: 1.143em;
+	font-weight: 400;
+	color: #33B5E5;
+	line-height: 60px;
+}
+
+p {
+	font-family: 'Open Sans', Helvetica, Arial, Sans Serif;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.286em;
+	margin: 0 0 10px 0;
+	color: #FFF;
+}
+
+span.bold {
+	font-weight: 700;
+}
+
+p > a {
+	font-weight: 400;
+	text-decoration: none;
+}
+
+a {
+	color: rgba(51,181,229,1)
+}
+
+img {
+	margin-bottom: 10px;
+}
+
+.bullet-list > li {
+	font-family: 'Open Sans', Helvetica, Arial, Sans Serif;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.286em;
+	margin: 0 0 10px 0;
+	color: #FFF;
+	list-style-image:url('../img/check.png');
+}
+
+.hide {
+	display: none; 
+}
+
+.clear {
+	clear: both; 
+}
+
+.invisible {
+	position: absolute !important;
+	display: block !important;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.container-fluid {
+
+}
+
+::-moz-selection {
+    background-color: #A2AFB2;
+    color: #fff;
+}
+
+::selection {
+    background-color: #A2AFB2;
+    color: #fff;
+}
+
+
+/*======================
+ * CURTAIN + NAVBAR
+ * =====================*/
+
+#curtain {
+	position: fixed;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #000;
+	z-index: 1000;
+	/*box-shadow: 0 10px 40px rgba(51,181,229,0.3);*/
+}
+
+#curtain #particles {
+	position: absolute;
+	top: 0;
+	z-index: -1000;
+}
+
+#curtain #splash {
+	position: relative;
+	width: 100%;
+	padding: 0;
+}
+
+#curtain #splash #brand {
+	padding-top: 8%;
+}
+
+#curtain #splash #logo-container {
+	position: relative;
+	float: right;
+	width: 500px;
+	height: 300px;
+}
+
+#curtain #splash  #logo-container > #logo {
+	background: url(../img/logo.png) center center no-repeat;
+	background-size: contain;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 2;
+}
+
+#curtain #splash  #logo-container > #logo span { 
+	display:block;
+	background-image:url(../img/logo.png); 
+	background-repeat:no-repeat;
+	float:left;
+}
+
+#curtain #splash #name {
+	padding-top: 100px;
+	margin-left: -5px; /*to get rid of leading space that comes with font*/
+}
+
+#curtain #splash #title {
+	
+}
+
+#curtain #splash #tagline {
+	text-align: center;
+	padding-top: 40px;
+}
+
+#curtain #splash #tagline h3  {
+	color: #8A7C7F;
+}
+
+#curtain > #navbar {
+	position: relative;
+	width: 100%;
+	height: 70px;
+	/*padding: 10px 0;*/
+	text-align: center;
+	z-index: 2;
+
+}
+
+#curtain #navbar #nav-logo {
+	padding: 10px;
+	float: left;
+	width: 70px;
+	vertical-align:middle;
+}
+
+#curtain #navbar .nav {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	list-style: none;
+}
+
+#curtain #navbar .nav li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 25px;
+}
+
+#curtain #navbar .nav li a {
+	padding: 0 20px;
+	font-family: 'Oswald', Helvetica, Arial, Sans Serif;
+	font-size: 1.714em;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #FFF;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+#curtain #navbar .nav .active,
+#curtain #navbar .nav .active > a,
+#curtain #navbar .nav > li:hover,
+#curtain #navbar .nav > li > a:hover {
+	color: rgba(51,181,229,1);
+  	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(51,181,229, 0.75);
+	background-color: transparent;
+}
+
+/*======================
+ * VIEWPORT
+ * =====================*/
+
+#viewport {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+#viewport #main {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#main .block {
+	display: none;
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+
+#main .active {
+	display: block;
+}
+
+#main.animating {
+	width: 200% !important;
+}
+
+#main.animating .block {
+	width: 50%;
+}
+
+/*======================
+ * PROJECTS
+ * =====================*/
+
+/*====PROJECTS====*/
+
+#projects {
+	position: relative;
+}
+
+.accordion {
+	padding-top: 90px;
+}
+
+.accordion-group {
+	padding: 50px 0;
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	box-shadow: -10px -10px 20px rgba(51,181,229,0.3);
+}
+
+.accordion-group:first-child {
+	box-shadow: none;
+}
+
+.accordion-group:hover {
+	/*background-color: rgba(51,181,229, 0.1);*/
+}
+
+.accordion-heading {
+	*zoom: 1;
+	cursor: pointer;
+	text-align: center;
+}
+
+.accordion-heading:hover > h3{
+	color: rgba(51,181,229,1);
+}
+
+.accordion-body {
+	color: #eeeeee;
+}
+
+.accordion-body .closer {
+	position: absolute;
+	right: 20px;
+	top: 9px;
+	margin: 10px;
+	z-index: 100;
+}
+
+.accordion-inner {
+	padding: 0 20px;
+	*zoom: 1;
+	border: none;
+	margin: 0;
+}
+
+.flexslider {
+	margin: 0;
+	background:none;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+}
+
+.flex-nav {
+	list-style: none;
+	text-align: center;
+	padding: 0 0 10px 0;
+	margin: 10px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.flex-nav li {
+	display: inline-block;
+	margin: 5px 0;
+}
+
+.flex-nav li a {
+	font-family: 'Open Sans', Helvetica, Arial, Sans Serif;
+	font-size: 1.2em;
+	font-weight: 700;
+	line-height: 1.286em;
+	text-decoration: none;
+	padding: 5px 9px;
+	cursor: pointer;
+	color: rgba(51,181,229,1);
+}
+
+.flex-nav li a:hover {
+	color: #FFF;
+	background-color: rgba(51,181,229,0.25);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.flex-nav .flex-active {
+	color: #FFF;
+	background-color: rgba(51,181,229,0.6);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.flex-viewport {
+	padding-bottom: 20px;
+}
+
+.flexslider .slides {
+	padding-top: 10px;
+}
+
+.flexslider .slides li {
+
+}
+
+.flexslider .slides img {
+	margin-bottom: 10px;
+}
+
+.flexslider .project-image-container {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	margin-bottom: 10px;
+	
+}
+
+.flexslider .project-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+/*====LIGHTBOX SETTINGS====*/
+
+.imageRow {
+  *zoom: 1;
+  margin: 10px 0;
+}
+
+.imageRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.imageRow .single {
+  float: left;
+  width: 140px;
+  height: auto;
+}
+
+.imageRow .single a {
+  float: left;
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 7px;
+  line-height: 1em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 40px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.imageRow .single a img {
+	margin-bottom: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.imageRow .single a:hover {
+  background-color: rgba(51,181,229,0.5);
+}
+
+.imageRow .set {
+  float: left;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.imageRow .set:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.imageRow .set .single a {
+  background: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-right: 0;
+}
+
+.imageRow .set .single a:hover {
+  background-color: rgba(51,181,229,0.5);
+  -webkit-box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imageRow .set .single.first a {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.imageRow .set .single.last a {
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+
+/*====THE ENERGY COALITION====*/
+
+#tec #homescreen {
+	background-image: url(../img/tec/tec-home.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right top;
+}
+
+
+/*======================
+ * ABOUT
+ * =====================*/
+
+#about-inner {
+	padding-top: 100px;
+	max-width: 75%;
+	margin: auto;
+}
+
+#connect-wrap {
+	position: relative;
+	display: inline;
+}
+
+#connect-wrap .connect-link {
+	display: inline-block;
+	list-style-type: none;
+	float: left;
+}
+
+.connect-link .connect-icon {
+	display: block;
+	width: 60px;
+	height: 60px;
+}
+
+.connect-link #email {
+	background-image: url(../img/email-white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.connect-link #email:hover {
+	background-image: url(../img/email-blue.png)
+}
+
+.connect-link #twitter {
+	background-image: url(../img/twitter-white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.connect-link #twitter:hover {
+	background-image: url(../img/twitter-blue.png)
+}
+
+.connect-link #linkedin {
+	background-image: url(../img/linkedin-white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.connect-link #linkedin:hover {
+	background-image: url(../img/linkedin-blue.png)
+}
+
+/*======================
+ * BLOG
+ * =====================*/
+
+#blog-inner {
+	padding-top: 100px;
+}
+
+/*======================
+ * LABS
+ * =====================*/
+
+#labs-inner {
+	padding-top: 100px;
+}
+
+/*======================
+ * FOOTER
+ * =====================*/
+
+footer {
+	width: 100%;
+	position: relative;
+	margin: auto;
+	color: #FFF;
+	padding: 20px 0;
+}
+
+footer p {
+	text-align: center;
+	margin: 0;
+}
+
+
+/*======================
+ * MEDIA QUERIES
+ * =====================*/
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+}
+
+@media (min-width: 979px) {
+	
+}
+
+@media (max-width: 979px) {
+	
+	
+	#curtain #splash #brand {
+		padding-top: 4%;
+	}
+	
+	#curtain #splash #logo-container {
+		width: 400px;
+		height: 250px;
+	}
+	
+	#curtain #splash #name {
+		font-size: 4em;
+		padding-top: 90px;
+		margin-left: -5px; /*to get rid of leading space that comes with font*/
+	}
+	
+	#curtain #splash #title {
+		font-size: 2em;
+	}
+	
+	h3 {
+		font-size: 2em;
+		padding: 5px 0;
+		margin: 0;
+	}
+	
+	h4, h5 {
+		font-size: 1.286em;
+	}
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	#curtain #splash #brand {
+		padding-top: 2%;
+	}
+	
+	#curtain #splash .span6 {
+		width: 48.93617021276595%;
+		margin-left: 2.127659574468085%;
+		float: left;
+	}
+	
+	#curtain #splash .span6:first-child {
+		margin-left: 0;
+	}
+	
+	#curtain #splash #logo-container {
+		width: 200px;
+		height: 100px;
+	}
+	
+	#curtain #splash #name {
+		font-size: 2.286em;
+		padding-top: 20px;
+		margin: 5px 0;
+		text-align: left;
+	}
+	
+	#curtain #splash #title {
+		font-size: 1.286em;
+		line-height: 1.286em;
+		margin: 5px 0;
+		text-align: left;
+	}
+
+	.container-fluid {
+		padding: 0 20px;
+	}
+
+	.accordion-group {
+		padding: 20px 0;
+	}
+	
+	.flexslider .project-image-container {
+		height: 250px;
+	}
+	
+	#tec #homescreen {
+		background-position: left top;
+	}
+	
+	.accordion-heading {
+		text-align: left;
+		padding: 0 20px;
+	}
+	
+	.flex-nav {
+		text-align: left;
+	}
+	
+	.flex-nav li a {
+		font-size: 1em;
+	}
+	
+	p {
+		font-size: 1em;
+	}
+	
+	.bullet-list > li {
+		font-size: 1em;
+	}
+	
+	
+	
+	#about-inner {
+		max-width: 85%;
+		margin: auto;
+	}
+	
+	#about h6 {
+		text-align: center;
+	}
+	
+	#connect-wrap {
+		position: absolute;
+		width: 190px;
+		height: 80px;
+		left: 50%;
+		margin: 0 0 0 -95px;
+	}
+	
+	#connect-wrap .connect-link {
+		float: none;
+	}
+	
+	
+	
+	
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#curtain #splash .span6 {
+		width: auto;
+		margin-left: 0;
+		float: none;
+	}
+	
+	#curtain #splash #logo-container {
+		width: 300px;
+		height: 200px;
+		float: none;
+		margin: auto;
+	}
+	
+	#curtain #splash #name {
+		font-size: 3em;
+		padding-top: 5px;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	#curtain #splash #title {
+		font-size: 1.714em;
+		text-align: center;
+	}
+	
+	#curtain > #navbar {
+		height: 70px;
+	}
+	
+	#curtain #navbar .nav li {
+		width: 100px;
+	}
+	
+	#curtain #navbar .nav #nav-projects {
+		text-align: left;
+	}
+	
+	#curtain #navbar .nav #nav-about {
+		text-align: right;
+	}
+	
+	#curtain #navbar .nav #nav-logo {
+		padding-top: 5px;
+		text-align: center;
+	}
+	
+	#curtain #navbar .nav li a {
+		padding: 0;
+		font-size: 1.714em;
+		font-weight: 400;
+	}
+	
+	#curtain #navbar .nav li a img {
+		max-width: 80%;
+		margin-left: 20px;
+	}
+	
+	.accordion-group {
+		padding: 10px 0;
+	}
+	
+	.flexslider .project-image-container {
+		height: 225px;
+	}
+	
+}

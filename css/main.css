@@ -1282,7 +1282,7 @@ li.aside-box {
 	}
 	.project-nav-animation h3,
 	.project-nav-animation p {
-		display: none;
+		display: none !important;
 	}
 
 	.project-nav-animation a:hover .icon-wrap {

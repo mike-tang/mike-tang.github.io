@@ -936,7 +936,7 @@ li.aside-box {
 .project .hero-text {
 	z-index: 100;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 1.0rem;
 	text-align: center;
 	width: 100%;
 	max-width: 80.0rem;

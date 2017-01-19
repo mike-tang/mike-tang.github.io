@@ -138,19 +138,10 @@ a {
 	transition: color .5s;
 }
 
-/*
-a:hover {
-	color: #2688ac;
-	-webkit-transition: color .5s;
-	-moz-transition: color .5s;
-	-ms-transition: color .5s;
-	-o-transition: color .5s;
-	transition: color .5s;
-}
-*/
-
-a:hover, a:active, a:focus {
-  outline: 0;
+a:hover, 
+a:active, 
+a:focus {
+	outline: 0;
 }
 
 img {

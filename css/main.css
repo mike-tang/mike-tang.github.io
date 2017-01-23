@@ -372,7 +372,7 @@ img.width-four {
 	padding: 1.0rem;
 	font-size: 2.4rem;
 	line-height: 1;
-	color: #393638;
+	color: #777777;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: 	all 0.2s ease;
 	-o-transition: 		all 0.2s ease;
@@ -384,7 +384,7 @@ img.width-four {
 	position: relative;
 	width: 2.8rem;
 	height: 0.3rem;
-	background: #393638;
+	background: #777777;
 	top: 1.0rem;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: 	all 0.2s ease;
@@ -399,7 +399,7 @@ img.width-four {
 	content: "";
 	width: 100%;
 	height: 0.3rem;
-	background: #393638;
+	background: #777777;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: 	all 0.2s ease;
 	-o-transition: 		all 0.2s ease;
@@ -456,7 +456,7 @@ img.width-four {
 
 /* Push Menu */
 .aside {
-	background-color: #393638;
+	background-color: #333333;
 	position: fixed;
 	width: 30.0rem;
 	height: 100%; /* fallback for browsers without support for calc() */
@@ -572,7 +572,7 @@ img.width-four {
 
 .aside h4 {
 	display: block;
-	color: #615e60;
+	color: #FFFFFF;
 	font-size: 1.2rem;
 	font-weight: 400;
 	line-height: 1.2;
@@ -581,7 +581,8 @@ img.width-four {
 	letter-spacing: 0.2rem;
 	padding: 0 0 0.5rem;
 	margin: 0 0 1.0rem;
-	border-bottom: 0.1rem solid #615e60;
+	border-bottom: 0.1rem solid #FFFFFF;
+	opacity: 0.2;
 }
 
 .aside p {
@@ -635,7 +636,7 @@ li.aside-box {
 }
 
 .aside-box a:hover {
-	/*color: #58849b;*/
+	/*color: #568197;*/
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-ms-transition: all .5s;
@@ -643,7 +644,7 @@ li.aside-box {
 	transition: all .5s;
 }
 .aside-box:hover span[class*="icon"] {
-	color: #58849b;
+	color: #568197;
 	-webkit-transition: color .5s;
 	-moz-transition: color .5s;
 	-ms-transition: color .5s;
@@ -975,7 +976,7 @@ li.aside-box {
 }
 
 .project .content a:hover {
-	color: #58849b;
+	color: #568197;
 }
 
 .project .content img {

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?ci6z18');
-  src:  url('fonts/icons.eot?ci6z18#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?ci6z18') format('truetype'),
-    url('fonts/icons.woff?ci6z18') format('woff'),
-    url('fonts/icons.svg?ci6z18#icons') format('svg');
+  src:  url('fonts/icons.eot?u9gww6');
+  src:  url('fonts/icons.eot?u9gww6#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?u9gww6') format('truetype'),
+    url('fonts/icons.woff?u9gww6') format('woff'),
+    url('fonts/icons.svg?u9gww6#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -36,14 +36,15 @@
 .icon-linkedin:before {
   content: "\e903";
 }
-.icon-mail:before {
+.icon-location:before {
   content: "\e904";
 }
-.icon-twitter:before {
+.icon-mail:before {
   content: "\e905";
 }
-
-
+.icon-twitter:before {
+  content: "\e906";
+}
 
 
 
@@ -547,9 +548,11 @@ img.width-four {
 .aside section:last-child {
 	padding-bottom: 0;
 }
+
 .aside-about {
 	text-align: center;
 }
+
 .aside .profile-image {
 	width: 15.0rem;
 	height: 15.0rem;
@@ -561,12 +564,13 @@ img.width-four {
 	border-radius: 50%;
 	margin: 0 auto 2.0rem;
 }
+
 .aside h3 {
 	display: block;
 	color: #d7d7d7;
 	font-size: 2.4rem;
 	font-weight: 300;
-	padding: 0rem;
+	padding: 0 0 1.0rem;
 	margin: 0;
 }
 
@@ -587,6 +591,12 @@ img.width-four {
 
 .aside p {
 	color: #d7d7d7;
+	padding-bottom: 1.0rem !important;
+}
+
+.aside .icon-location {
+	padding: 0 0.4rem 0 0;
+	font-size: 1.6rem;
 }
 
 .aside-skills {

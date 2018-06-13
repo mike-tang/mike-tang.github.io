@@ -948,9 +948,7 @@ li.aside-box {
 	text-transform: uppercase;
 	text-align: left;
 	letter-spacing: 0.2rem;
-	padding: 0 0 0.5rem;
-	margin: 0 0 1.0rem;
-	border-bottom: 0.1rem solid #c0bfbf;
+	padding: 2rem 0;
 }
 
 .project .content h4 {
